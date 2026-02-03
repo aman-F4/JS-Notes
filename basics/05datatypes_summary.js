@@ -35,4 +35,35 @@ console.log(typeof bigNumber);//undefined
 //function of return datatype is object function
 
 
+//***********************MEMORY********************
+// 1.Stack(primitive me use hoti h)
+
+
+
+let myYouTubename="amnaaverma.com"
+
+let anothername=myYouTubename
+anothername="chaiaurcode"
+
+console.log(myYouTubename);
+console.log(anothername);
+
+//2. Heap(Non-Primitive me use hoti h)
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne;
+userTwo.email="aman@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
+
+
 
