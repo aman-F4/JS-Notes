@@ -21,4 +21,7 @@ let isLoggedIn=false
 //boolean=>true/false
 //numm=>standalone value
 //undefined =>variable whose value is not defined
+//symbol=>used to find uniqueness
 
+console.log(typeof null);//object
+console.log(typeof undefined);//undefined
