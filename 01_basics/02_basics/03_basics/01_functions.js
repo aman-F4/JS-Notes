@@ -47,3 +47,37 @@ function loginUserMessage(username="Sam"){
 //console.log(loginUserMessage())
 console.log(loginUserMessage("Aman"));
 
+
+function calculateCartPrice(val1,val2, ...num1){//... is called rust operator and it converts all the value into array then if you need sum use loop to calculate it
+    return num1
+}
+console.log(calculateCartPrice(200,100,3000,2000))
+//val1 and val2 will take the 1st and 2nd value and left will be gone in array created 
+
+
+//how to pass object or use object in function
+
+const user={
+    username:"Aman",
+    price:99
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+//handleObject(user)
+//or you can directly pass object
+handleObject({
+    username:"Aman",
+    price:199
+})
+
+//you can pass array also in function
+
+const myNewArray=[200,100,1000,400]
+
+function returnthirdValue(getArray){
+    return getArray[2]
+}
+//console.log(returnthirdValue(myNewArray))
+console.log(returnthirdValue([200,100,1000,400]))
