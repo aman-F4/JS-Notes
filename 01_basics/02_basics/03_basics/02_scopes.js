@@ -35,7 +35,7 @@ if(true){
 //console.log(username)
 
 
-//*****************INTEWRESTING ************/
+//*****************INTERESTING ************/
 
 console.log( addone(5));
  function addone(num){
