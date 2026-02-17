@@ -1,6 +1,7 @@
 //Immediately Invoked Function Expressions(IIFE)
 
 
+
 //global scope ke pollution se problem hoti h kayi bar
 // to ush global scope ka jo bhi declaration h usko hatane ke liye hum IFFE ka us ekrte h
 
