@@ -1,0 +1,57 @@
+
+// foreach 
+
+const coding = ["js", "rb", "py", "java", "cpp"]
+
+// coding.forEach( function (val){
+// console.log(val)
+// })
+
+//foreach is saying call back function so write function without name of function
+
+
+
+//in arrow function how to use
+// coding.forEach( (val) => {
+//     console.log(val);
+// })
+
+
+function printMe(item){
+console.log(item);
+
+}
+coding.forEach(printMe)
+//If you have already call the function then you can directly access it by giving the reference
+
+
+
+//foreach doesn't have only item it can access index and array too
+coding.forEach( (item, index, arr) => {
+    console.log(item, index, arr);
+    
+})
+
+
+
+//Array ke andar object declare kre tb kya??
+const myCoding = [
+    {
+        languageName:"javascript",
+        languageFileName:"js"
+    },
+     {
+        languageName:"java",
+        languageFileName:"java"
+    },
+     {
+        languageName:"python",
+        languageFileName:"py"
+    },
+]
+//so you can iterate on the on the object inside array by using foreach
+myCoding.forEach( (item) => {
+    console.log(item.languageFileName);
+    // console.log(item.languageName);
+    
+})
