@@ -3,28 +3,32 @@
 # Project 1
 # Solution Code
 ```javascript
-const buttons=document.querySelectorAll('.button');
-const body =document.querySelector('body');
 
-buttons.forEach(function (button){
-    console.log(button);
-    button.addEventListener('click', function (e){
-        console.log(e);
-        console.log(e.target);
-        if(e.target === 'grey'){
-            body.style.backgroundColor = e.target.id;
-        }
-         if(e.target === 'white'){
-            body.style.backgroundColor = e.target.id;
-        }
-         if(e.target === 'blue'){
-            body.style.backgroundColor = e.target.id;
-        }
-         if(e.target === 'yellow'){
-            body.style.backgroundColor = e.target.id;
-        }
-    })
-})
+const buttons = document.querySelectorAll('.button');
+const body = document.querySelector('body');
+
+buttons.forEach(function (button) {
+  console.log(button);
+  button.addEventListener('click', function (e) {
+    console.log(e);
+    console.log(e.target);
+    if (e.target.id === 'grey') {
+      body.style.backgroundColor = e.target.id;
+    }
+    if (e.target.id === 'white') {
+      body.style.backgroundColor = e.target.id;
+    }
+    if (e.target.id === 'blue') {
+      body.style.backgroundColor = e.target.id;
+    }
+    if (e.target.id === 'yellow') {
+      body.style.backgroundColor = e.target.id;
+    }
+    
+  });
+});
+
+
 
 ```
 
@@ -78,14 +82,22 @@ form.addEventListener('submit', function (e) {
 
 ```javascript
 
+ const clock=document.getElementById('clock')
+ //const clock=document.querySelector('clock')
+
+setInterval(function(){
+  let date=new Date();
+  //console.log(date.toLocaleTimeString());
+  clock.innerHTML=date.toLocaleTimeString();
+}, 1000);
+
+```
+
+# Project 4
+# Solution Code
 
 
-
-
-
-
-
-
+```javascript
 
 
 ```
